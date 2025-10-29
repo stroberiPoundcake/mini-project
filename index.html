@@ -3,9 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CRUD</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello</h1>
+    <h1>Login</h1>
+    <form action="action-page.php" method="post">
+        <div class="container">
+            <label for="username">username</label>
+            <input type="text" placeholder="username" name="Username" required>
+            <label for="password">password</label>
+            <input type="text" placeholder="input password" name="Password">
+            <button type="submit">Login</button>
+             <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+    </form>
 </body>
 </html>
