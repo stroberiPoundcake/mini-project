@@ -54,16 +54,62 @@ p {
   text-align: left;
   font-size: 12px;
   color: #eee;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   cursor: pointer;
 }
 
-p:hover {
+p a {
+ color: #eee;
+ text-decoration: none;
+}
+
+p a:hover {
   text-decoration: underline;
 }
 
 #loginBtn {
-    width: 50%;
+  width: 50%;
+  background-color: #ece9d8;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.registerContainer {
+ background: rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(15px);
+ border-radius: 14px;
+ padding: 50px;
+ width: 450px;
+ height: 650px;
+ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+ text-align: center;
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+}
+
+.registerContainer h1 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.registerContainer label {
+  display: block;
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 5px;  
+}
+
+#registerBtn {
+  width: 50%;
   background-color: #ece9d8;
   color: #333;
   border: none;
