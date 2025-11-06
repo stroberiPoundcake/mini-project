@@ -1,52 +1,75 @@
-form {
-    border: 3pc solid #f1f1f1;
-    
-}
-
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
 
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right,#BADFDB, #FFA4A4);
+}
+.loginContainer {
+ background: rgba(0, 0, 0, 0.1);
+ backdrop-filter: blur(15px);
+ border-radius: 14px;
+ padding: 50px;
+ width: 450px;
+ height: 650px;
+ box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+ text-align: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginContainer h1 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-weight: 400;
+}
+
+.loginContainer label {
+  display: block;
+  text-align: left;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input {
   width: 100%;
+  padding: 8px 10px;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  margin-bottom: 15px;
+  background: rgba(255, 255, 255, 0.85);
 }
 
-button:hover {
-  opacity: 0.8;
+p {
+  text-align: left;
+  font-size: 12px;
+  color: #eee;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
+p:hover {
+  text-decoration: underline;
 }
 
-.container {
-  padding: 16px;
-}
-
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
-
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-   .cancelbtn {
-    width: 100%;
-  }
+#loginBtn {
+    width: 50%;
+  background-color: #ece9d8;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }

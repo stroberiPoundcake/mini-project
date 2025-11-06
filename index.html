@@ -7,35 +7,18 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Login</h1>
-    <form action="action-page.php" method="post">
-        <div class="container">
-            <label for="username">username</label>
-            <input type="text" placeholder="username" name="Username" required>
-            <label for="password">password</label>
-            <input type="password" placeholder="input password" name="password" id="Password" required>
-            <button type="button" onclick="toggle(this);">Show</button>
-            <button type="submit">Login</button>
-             <label>
-      <input type="checkbox" checked="checked" name="remember"> Remember me
-    </label>
-        </div>
-        <div class="container" style="background-color:#f1f1f1">
-    <button type="button" class="cancelbtn">Cancel</button>
-    <span class="psw">Forgot <a href="#">password?</a></span>
-  </div>
-    </form>
+ <div class="loginContainer">
+    <h1>Log In</h1>
+   <form action="submit" id="loginForm">
+       <label for="Username">Username</label>
+       <input type="username">
+       <label for="Password">Password</label>
+       <input type="password">
+       <p>Forgot your Password?</p>
+       <button id="loginBtn">Login</button>
+
+   </form>
+ </div>
 </body>
-<script>
-    function toggle(button) {
-        var password = document.getElementById ("Password");
-        if (password.type == "Password") {
-            button.innerHTML = "hide";
-            password.type = "text";
-        } else {
-            button.innerHTML = "Show";
-            password.type = "Password";
-        }
-    }
-</script>
+
 </html>
